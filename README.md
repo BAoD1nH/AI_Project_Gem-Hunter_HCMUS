@@ -1,6 +1,6 @@
 # Gem-Hunter
 Gem Hunter - a AI Project that helps agent to find gold in 2D map while avoiding trap by applying CNF solving algorithm.
-## Code rules Summary:
+## Code rules summary:
 - Đặt tên hàm & biến theo camelCase (VD: def findHeuristic, printMap)
 - Tên hàm phải mô tả đầy đủ chức năng (không đặt tên hàm 1 chữ)
 - Tên Class thì viết hoa hết, init thì phải có default lẫn copy (init truyền & k truyền tham biến)
@@ -16,3 +16,5 @@ Gem Hunter - a AI Project that helps agent to find gold in 2D map while avoiding
 - Github guidelines: https://github.com/elsewhencode/project-guidelines
 - Code convention (Quy tắc clean code): https://vietnix.vn/code-convention-la-gi/
 - Write commit message: https://cbea.ms/git-commit/#seven-rules
+## Ngoài lề
+- Tao thấy chỗ tạo issue với project tiện vcl, tự nhiên giờ nghiện github rồi ae à :D
