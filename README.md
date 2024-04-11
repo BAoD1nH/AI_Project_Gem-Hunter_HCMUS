@@ -17,4 +17,4 @@ Gem Hunter - a AI Project that helps agent to find gold in 2D map while avoiding
 - Code convention (Quy tắc clean code): https://vietnix.vn/code-convention-la-gi/
 - Write commit message: https://cbea.ms/git-commit/#seven-rules
 ## Ngoài lề
-- Tao thấy chỗ tạo issue với project tiện vcl, tự nhiên giờ nghiện github rồi ae à :D
+"Tao thấy chỗ tạo issue với project tiện vcl, tự nhiên giờ nghiện github rồi ae à :D" From: Bảo
