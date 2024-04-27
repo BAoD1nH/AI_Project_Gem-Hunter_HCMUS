@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+
 class Cell:
   def __init__(self, value):
     self.value = value
@@ -28,10 +29,40 @@ class Map(Cell):
       self.size = len(self.map_array)
 
   def printMap(self):
+    # Tạo figure và axes
+    fig, ax = plt.subplots()
+
+    fig.set_size_inches(10, 10)
+
+    # Vẽ các ô vuông
     for i in range(0, self.size):
-      for j in range(0, self.size):
-        print('N' if self.map_array[i][j].value == None else self.map_array[i][j].value, end=" ")
-      print()
+        for j in range(0, self.size):
+            if (self.map_array[i][j].value == None):
+              color = "purple"
+            elif (self.map_array[i][j].value == "T"):
+              color = "rosybrown"
+            elif (self.map_array[i][j].value == "G"):
+              color = "gold"
+
+            else:
+              color = "navajowhite"
+            rect = plt.Rectangle((j, i), 1, 1, facecolor=color, edgecolor="black")
+            ax.add_patch(rect)
+            # Ghi giá trị vào ô vuông
+            ax.text(j + 0.5, i + 0.5, (self.map_array[i][j].value), ha="center", va="center", fontsize=10)
+
+    
+
+    # Loại bỏ các trục số
+    ax.set_xticks([])
+    ax.set_yticks([])
+
+    # Cài đặt giới hạn trục
+    ax.set_xlim(0, self.size)
+    ax.set_ylim(self.size, 0)
+
+    # Hiển thị ma trận
+    plt.show()
 
 #Write constraints for cells containing numbers
 #To obtain a set of constraint clauses in CNF
