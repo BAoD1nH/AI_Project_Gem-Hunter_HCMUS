@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+from copy import deepcopy
+import time
 
 class Cell:
   def __init__(self, value):
@@ -40,7 +42,7 @@ class Map(Cell):
             if (self.map_array[i][j].value == None):
               color = "purple"
             elif (self.map_array[i][j].value == "T"):
-              color = "rosybrown"
+              color = "red"
             elif (self.map_array[i][j].value == "G"):
               color = "gold"
 
@@ -64,33 +66,28 @@ class Map(Cell):
     # Hiển thị ma trận
     plt.show()
 
+
 #Write constraints for cells containing numbers
 #To obtain a set of constraint clauses in CNF
 #Generate CNFs automatically.
 def generateCNF():
-
+    pass
 #Using the pysat library to find the value for each variable
 # Infer the result
 def solveMapPysat():
-
+    pass
 # Choose and apply an optimal algorithm to solve the CNF.
 def solveMapOptimal():
-
-#Measuring running time
-def bruteForce():
-
-
-def backTracking():
+    pass
 
 #Ham phu
 def printCurrentMap():
-
+    pass
 
 
 
 # Main
 file_path = "Map/9x9/9x9.txt"
 map = Map()
-map.readFile(file_path)
+map.readInput(file_path)
 map.printMap()
-
